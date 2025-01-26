@@ -1,22 +1,18 @@
-"""
-    Setup file for deneme.
-    Use setup.cfg to configure your project.
+from setuptools import setup, find_packages
 
-    This file was generated with PyScaffold 4.6.
-    PyScaffold helps you to put up the scaffold of your new Python project.
-    Learn more under: https://pyscaffold.org/
-"""
-
-from setuptools import setup
-
-if __name__ == "__main__":
-    try:
-        setup(use_scm_version={"version_scheme": "no-guess-dev"})
-    except:  # noqa
-        print(
-            "\n\nAn error occurred while building the project, "
-            "please ensure you have the most updated version of setuptools, "
-            "setuptools_scm and wheel with:\n"
-            "   pip install -U setuptools setuptools_scm wheel\n\n"
-        )
-        raise
+setup(
+    name="project_name",
+    version="0.1.0",
+    packages=find_packages(),
+    install_requires=[],
+    description="A simple Python project with basic functions.",
+    author="Your Name",
+    author_email="your.email@example.com",
+    url="https://github.com/yourusername/project_name",
+    classifiers=[
+        "Programming Language :: Python :: 3",
+        "License :: OSI Approved :: MIT License",
+        "Operating System :: OS Independent",
+    ],
+    python_requires=">=3.6",
+)
