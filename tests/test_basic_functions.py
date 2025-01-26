@@ -16,7 +16,7 @@ class TestBasicFunctions(unittest.TestCase):
         self.assertEqual(multiply(-2, 2), -4)
 
     def test_divide(self):
-        self.assertEqual(divide(10, 2), 5)
+        self.assertEqual(divide(30, 2), 15)
         with self.assertRaises(ValueError):
             divide(10, 0)
 
