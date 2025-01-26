@@ -1,4 +1,4 @@
-# project_name
+# deneme
 
 A simple Python project demonstrating basic functions and unit tests.
 
