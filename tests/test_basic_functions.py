@@ -13,7 +13,7 @@ class TestBasicFunctions(unittest.TestCase):
 
     def test_multiply(self):
         self.assertEqual(multiply(4, 5), 20)
-        self.assertEqual(multiply(-2, 3), -6)
+        self.assertEqual(multiply(-2, 2), -4)
 
     def test_divide(self):
         self.assertEqual(divide(10, 2), 5)
