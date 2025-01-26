@@ -45,12 +45,6 @@ pipeline {
             echo "Pipeline succeeded. File copied to ${DEST_PATH}."
         }
     }
-
-checkout([$class: 'GitSCM',
-          branches: [[name: '*/master']],
-          userRemoteConfigs: [[url: 'https://github.com/muzafferkahraman/deneme.git/']],
-          poll: false])
-
 }
 
 
